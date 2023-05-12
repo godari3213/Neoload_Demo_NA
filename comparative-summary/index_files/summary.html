@@ -1,0 +1,468 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="match_report_template">
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./scenario_A.html">Scenario&nbsp;
+										A</a>
+</div>
+<div class="item">
+<a href="./scenario_B.html">Scenario&nbsp;
+										B</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_tricentis.png"></div>
+</div>
+<div id="content" class="match_report_summary_template">
+<div class="divHeader">Summary</div>
+<div style="width: 100%; height: 20px;" id="report.resultssummary">
+<div style="float:left" class="h1" id="statistics_summary_title">Results summary</div>
+</div>
+<div class="wrapper" align="center" name="summary" id="summary">
+<div align="center">
+<table class="results_summary_template">
+<tr>
+<th width="12%">&nbsp;</th><th width="44%">A</th><th width="44%">B</th>
+</tr>
+<tr>
+<td class="line1"><strong>Project</strong></td><td class="line1">NA_Demo_1</td><td class="line1">NA_Demo_1</td>
+</tr>
+<tr>
+<td class="line2"><strong>Scenario</strong></td><td class="line2">scenario1</td><td class="line2">scenario1</td>
+</tr>
+<tr>
+<td class="line1"><strong>Name</strong></td><td class="line1">Test_1_10:19 AM - 11 May 2023_1</td><td class="line1">11:31 AM - 11 May 2023</td>
+</tr>
+<tr>
+<td class="line2"><strong>Description</strong></td><td class="line2">Test_1_10:19 AM - 11 May 2023</td><td class="line2">11:31 - 11 May 2023</td>
+</tr>
+
+                -----
+                <tr>
+<td class="line1"><strong>NeoLoad Web</strong></td><td class="line1"></td><td class="line1"><a target="_blank" href="https://neoload.saas.neotys.com/#!result/6bf60500-9283-46f9-b393-83161a4edf0b/overview">https://neoload.saas.neotys.com/#!result/6bf60500-9283-46f9-b393-83161a4edf0b/overview</a></td>
+</tr>
+                ----
+                <tr>
+<td class="line1"><strong>Status</strong></td><td class="line1"><img src="images/status_PASS.png" alt="images/status_PASS.png" style="vertical-align: middle;">  Passed</td><td class="line1"><img src="images/status_PASS.png" alt="images/status_PASS.png" style="vertical-align: middle;">  Passed</td>
+</tr>
+<tr>
+<td class="line2"><strong>Start date</strong></td><td class="line2">May 11, 2023, 10:20:38 AM</td><td class="line2">May 11, 2023, 11:32:23 AM</td>
+</tr>
+<tr>
+<td class="line1"><strong>End date</strong></td><td class="line1">May 11, 2023, 10:30:51 AM</td><td class="line1">May 11, 2023, 11:42:36 AM</td>
+</tr>
+<tr>
+<td class="line2"><strong>Duration</strong></td><td class="line2">00:10:12</td><td class="line2">00:10:12</td>
+</tr>
+<tr>
+<td class="line1"><strong>Termination reason</strong></td><td class="line1">Execution policy</td><td class="line1">Execution policy</td>
+</tr>
+<tr>
+<td class="line2"><strong>Load Policy</strong></td><td class="line2">
+<ul class="valuesList" style="padding-left:0px">
+<li class="listItem">The population&nbsp;<strong>Population1</strong>&nbsp;
+            is ramp up&nbsp;
+            from&nbsp;<strong>1</strong>&nbsp;users&nbsp;
+            adding&nbsp;<strong>2</strong>&nbsp;users&nbsp;
+            every&nbsp;<strong>3.0</strong>&nbsp;minutes.
+        </li>
+</ul>
+</td><td class="line2">
+<ul class="valuesList" style="padding-left:0px">
+<li class="listItem">The population&nbsp;<strong>Population1</strong>&nbsp;
+            is ramp up&nbsp;
+            from&nbsp;<strong>1</strong>&nbsp;users&nbsp;
+            adding&nbsp;<strong>2</strong>&nbsp;users&nbsp;
+            every&nbsp;<strong>3.0</strong>&nbsp;minutes.
+        </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="line1"><strong>LG Hosts</strong></td><td class="line1">localhost:7100</td><td class="line1">localhost:7100</td>
+</tr>
+<tr>
+<td class="line2"><strong>Filters</strong></td><td class="line2">
+<div>None</div>
+</td><td class="line2">
+<div>None</div>
+</td>
+</tr>
+<tr>
+<td class="line1"><strong>Debug</strong></td><td class="line1">Disabled</td><td class="line1">Disabled</td>
+</tr>
+</table>
+</div>
+<br>
+</div>
+<div style="width: 100%; height: 20px;" id="report.statisticssummary">
+<div style="float:left" class="h1" id="statistics_summary_title">Statistics Summary</div>
+</div>
+<div class="wrapper main_summary_content_template" align="center">
+<div align="center">
+<table class="statistics_summary_template">
+<tr>
+<th width="55%">&nbsp;</th><th width="15%">A</th><th width="15%">B</th><th width="15%">%</th>
+</tr>
+<tr>
+<td class="line2"><strong>Average pages/s</strong></td><td class="line2">0.2</td><td class="line2">0.2</td><td class="line2">+0%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Average requests/s</strong></td><td class="line1">0.3</td><td class="line1">0.3</td><td class="line1">+0%</td>
+</tr>
+<tr>
+<td class="line2"><strong>Total pages</strong></td><td class="line2">92</td><td class="line2">92</td><td class="line2">+0%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Total requests</strong></td><td class="line1">179</td><td class="line1">179</td><td class="line1">+0%</td>
+</tr>
+<tr>
+<td class="line2"><strong>Average Request response time</strong></td><td class="line2">0.312&nbsp;s</td><td class="line2">0.306&nbsp;s</td><td class="line2 goodPercentage">-1.9%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Total request errors</strong></td><td class="line1">0</td><td class="line1">0</td><td class="line1">+0%</td>
+</tr>
+<tr>
+<td class="line2"><strong>Error rate</strong></td><td class="line2">0</td><td class="line2">0</td><td class="line2">+0%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Average Page response time</strong></td><td class="line1">0.608&nbsp;s</td><td class="line1">0.595&nbsp;s</td><td class="line1 goodPercentage">-2.1%</td>
+</tr>
+<tr>
+<td class="line2"><strong>Total throughput</strong></td><td class="line2">0.33&nbsp; MB</td><td class="line2">0.33&nbsp; MB</td><td class="line2">+0%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Average throughput</strong></td><td class="line1">0.00&nbsp; Mb/s</td><td class="line1">0.00&nbsp; Mb/s</td><td class="line1">+0%</td>
+</tr>
+<tr>
+<td class="line2"><strong>Total users launched</strong></td><td class="line2">5</td><td class="line2">5</td><td class="line2">+0%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Total iterations completed</strong></td><td class="line1">82</td><td class="line1">82</td><td class="line1">+0%</td>
+</tr>
+<tr>
+<td class="line2"><strong>Total action errors</strong></td><td class="line2">0</td><td class="line2">0</td><td class="line2">+0%</td>
+</tr>
+<tr>
+<td class="line1"><strong>Alerts total duration </strong></td><td class="line1">0&nbsp;%</td><td class="line1">0&nbsp;%</td><td class="line1">+0%</td>
+</tr>
+</table>
+</div>
+<br>
+<div align="center" class="graph_predefined">
+<img src="images/summary.png" alt="summary"></div>
+<br>
+</div>
+<div style="width: 100%; height: 20px;" id="report.hotspots">
+<div style="float:left" class="h1" id="statistics_summary_title">Hot spots</div>
+</div>
+<div class="wrapper" align="center">
+<p class="smallTitle">Top 3 errors</p>
+<div>Greatest increases</div>
+<div align="center">
+<table class="match_toperrorsG_toperrorsL_template">
+<tr>
+<th width="61%">Page Results</th><th width="13%">Count&nbsp;A</th><th width="13%">Count&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<div>Greatest decreases</div>
+<div align="center">
+<table class="match_toperrorsG_toperrorsL_template">
+<tr>
+<th width="61%">Page Results</th><th width="13%">Count&nbsp;A</th><th width="13%">Count&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 3 alerts</p>
+<div>Greatest increases</div>
+<div align="center">
+<table class="match_topalertsG_topalertsL_template">
+<tr>
+<th width="61%">Alert Results</th><th width="13%">Duration %&nbsp;A</th><th width="13%">Duration %&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<div>Greatest decreases</div>
+<div align="center">
+<table class="match_topalertsG_topalertsL_template">
+<tr>
+<th width="61%">Alert Results</th><th width="13%">Duration %&nbsp;A</th><th width="13%">Duration %&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 3 average response times (Pages)</p>
+<div>Greatest increases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Page Results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<div>Greatest decreases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Page Results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td class="line1">/logout</td><td class="line1">0.613</td><td class="line1">0.586</td><td class="line1 goodPercentage">-4.4%</td>
+</tr>
+<tr>
+<td class="line2">/login</td><td class="line2">0.61</td><td class="line2">0.587</td><td class="line2 goodPercentage">-3.8%</td>
+</tr>
+<tr>
+<td class="line1">/authenticate</td><td class="line1">0.607</td><td class="line1">0.596</td><td class="line1 goodPercentage">-1.8%</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 3 average response times (Push messages)</p>
+<div>Greatest increases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Push messages results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<div>Greatest decreases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Push messages results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 3 maximum response times (Pages)</p>
+<div>Greatest increases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Page Results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<div>Greatest decreases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Page Results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td class="line1">/login</td><td class="line1">0.668</td><td class="line1">0.632</td><td class="line1 goodPercentage">-5.4%</td>
+</tr>
+<tr>
+<td class="line2">/authenticate</td><td class="line2">0.692</td><td class="line2">0.659</td><td class="line2 goodPercentage">-4.8%</td>
+</tr>
+<tr>
+<td class="line1">/logout</td><td class="line1">0.622</td><td class="line1">0.605</td><td class="line1 goodPercentage">-2.7%</td>
+</tr>
+</table>
+</div>
+<p class="smallTitle">Top 3 maximum response times (Push messages)</p>
+<div>Greatest increases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Push messages results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+<div>Greatest decreases</div>
+<div align="center">
+<table class="top_template">
+<tr>
+<th width="61%">Push messages results</th><th width="13%">Duration&nbsp;A</th><th width="13%">Duration&nbsp;B</th><th width="13%">%</th>
+</tr>
+<tr>
+<td colspan="4" class="line1">Empty list</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.errors">
+<div style="float:left" class="h1" id="statistics_summary_title">Errors</div>
+</div>
+<div class="wrapper" align="center">
+<p class="smalltitle">Request errors</p>
+<div align="center">
+<table width="100%" border="0" align="center" class="errors_summary_impl_template">
+<tr>
+<td colspan="3">No errors</td>
+</tr>
+</table>
+</div>
+<p class="smalltitle">Action errors</p>
+<div align="center">
+<table width="100%" border="0" align="center" class="errors_summary_impl_template">
+<tr>
+<td colspan="3">No errors</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.alerts">
+<div style="float:left" class="h1" id="statistics_summary_title">Alerts</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table width="100%" border="0" align="center" class="alerts_summary_template">
+<tr>
+<td colspan="7">No alerts</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.summary.all">
+<div style="float:left" class="h1" id="statistics_summary_title">General statistics</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="all_statistics_content_template">
+<tr>
+<th width="11%">Avg&nbsp;
+                <strong>A</strong></th><th width="11%">Avg&nbsp;
+                <strong>B</strong></th><th width="11%">Avg&nbsp;%
+            </th><th width="11%">Max&nbsp;
+                <strong>A</strong></th><th width="11%">Max&nbsp;
+                <strong>B</strong></th><th width="11%">Max&nbsp;%
+            </th><th width="11%">Err&nbsp;
+                <strong>A</strong></th><th width="11%">Err&nbsp;
+                <strong>B</strong></th><th width="11%">Err&nbsp;%
+            </th>
+</tr>
+<tr>
+<td colspan="9" class="line2">Empty list</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.summary.transactions">
+<div style="float:left" class="h1" id="statistics_summary_title">Transaction statistics</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="all_statistics_content_template">
+<tr>
+<th width="11%">Avg&nbsp;
+                <strong>A</strong></th><th width="11%">Avg&nbsp;
+                <strong>B</strong></th><th width="11%">Avg&nbsp;%
+            </th><th width="11%">Max&nbsp;
+                <strong>A</strong></th><th width="11%">Max&nbsp;
+                <strong>B</strong></th><th width="11%">Max&nbsp;%
+            </th><th width="11%">Err&nbsp;
+                <strong>A</strong></th><th width="11%">Err&nbsp;
+                <strong>B</strong></th><th width="11%">Err&nbsp;%
+            </th>
+</tr>
+<tr>
+<td colspan="9" class="line2">Empty list</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

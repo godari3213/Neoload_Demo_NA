@@ -1,0 +1,51 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<!DOCTYPE sla-profile [
+
+<!ELEMENT sla-profile (description?, sla-threshold*)>
+<!ATTLIST sla-profile
+    uid CDATA #REQUIRED
+    uniqueKey CDATA #REQUIRED>
+
+<!ELEMENT description (#PCDATA)>
+	
+<!ELEMENT sla-threshold ((threshold-condition )*)>
+<!ATTLIST sla-threshold
+	uid CDATA #REQUIRED
+	percent CDATA #IMPLIED
+	identifier CDATA #REQUIRED
+	enabled CDATA #REQUIRED
+	family CDATA #REQUIRED>
+
+<!ELEMENT threshold-condition (#PCDATA)>
+<!ATTLIST threshold-condition
+    severity CDATA #REQUIRED
+    durationKind CDATA #REQUIRED
+    durationNumber CDATA #REQUIRED
+    operator CDATA #REQUIRED
+    valueMin CDATA #REQUIRED
+    valueMax CDATA #REQUIRED>
+
+]>
+<sla-profile name="Profile_2" uid="191176e5-c620-43c7-b3c1-c47964b6005d">
+<description/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="AVERAGE_REQUEST_RESPONSE_TIME" percent="1" uid="c4505dff-e635-4eb4-a22e-5573483ac577"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="AVERAGE_PAGE_RESPONSE_TIME" percent="1" uid="cff72c2e-8e85-4a81-89c1-cd5cbb6a4515"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="AVERAGE_CONTAINER_RESPONSE_TIME" percent="1" uid="2f7faa1f-ef6d-469e-8a59-175d812ffafd"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="PERCENTILE_CONTAINER_RESPONSE_TIME" percent="1" uid="2785e8e3-8c77-476a-a099-ddc66224653e"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="AVERAGE_HITS_PER_SECOND" percent="1" uid="f03734de-0e47-48c5-99e6-6706bdedcb2b"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="AVERAGE_THROUGHPUT_PER_SECOND" percent="1" uid="02242769-d771-438b-93f3-f0444ac76933"/>
+<sla-threshold enabled="true" family="PER_RUN" identifier="TOTAL_ERRORS" percent="1" uid="490a6d37-3c29-4fdd-a3f7-9dd99fff2165">
+<threshold-condition durationKind="NB_OF_TIMES" durationNumber="1" operator="GREATER_THAN" severity="HIGH" valueMax="Infinity" valueMin="6.0"/>
+<threshold-condition durationKind="NB_OF_TIMES" durationNumber="1" operator="LESS_THAN" severity="LOW" valueMax="Infinity" valueMin="5.0"/>
+</sla-threshold>
+<sla-threshold enabled="false" family="PER_RUN" identifier="TOTAL_HITS" percent="1" uid="d6bf3256-324d-4f3b-8928-dffb45f1def8"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="TOTAL_THROUGHPUT" percent="1" uid="66dfbd8b-edbb-4609-8a24-4d02614bc30e"/>
+<sla-threshold enabled="false" family="PER_RUN" identifier="ERROR_PERCENTILE" percent="1" uid="fc680a2f-99ae-4c22-9b0b-4530be9b1685"/>
+<sla-threshold enabled="false" family="PER_TIME_INTERVAL" identifier="AVERAGE_RESPONSE_TIME" percent="1" uid="c4d6c5f3-93f2-44f2-b45d-a7bb3b197b6f"/>
+<sla-threshold enabled="false" family="PER_TIME_INTERVAL" identifier="AVERAGE_HITS_PER_SECOND" percent="1" uid="b5e62782-1d25-4bc7-bbb0-745630a9934b"/>
+<sla-threshold enabled="false" family="PER_TIME_INTERVAL" identifier="AVERAGE_THROUGHPUT_PER_SECOND" percent="1" uid="4dc87cb4-988c-4f31-a807-b509ea775794"/>
+<sla-threshold enabled="false" family="PER_TIME_INTERVAL" identifier="ERRORS_PER_SECOND" percent="1" uid="fb5aec3a-1821-4b75-b65d-398307b08569"/>
+<sla-threshold enabled="true" family="PER_TIME_INTERVAL" identifier="ERROR_PERCENTILE" percent="1" uid="9aaf6bff-e264-49aa-b6c6-f22c00a04666">
+<threshold-condition durationKind="NB_OF_TIMES" durationNumber="1" operator="GREATER_THAN" severity="LOW" valueMax="Infinity" valueMin="10.0"/>
+</sla-threshold>
+</sla-profile>

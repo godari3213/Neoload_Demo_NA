@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/back.css">
+  <link rel="stylesheet" type="text/css" href="styles/backalt.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+  
+<link rel="stylesheet" type="text/css" href="styles/jquery-ui/jquery-ui.css">
+<style>
+#errormsg
+{
+font-size:20px;
+color:#b32a1c;
+font-weight:bold;
+
+}
+ #demo {
+  font-family: "trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #669ae1;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 17px;
+}
+
+#demo1 {
+  font-family: "trebuchet MS", sans-serif;
+  font-size: 35px;
+  color: #669ae1;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+ 
+}
+.header-position{
+		z-index:100;
+	}
+</style>
+<script type="text/javascript">
+function getdata()
+{
+	var text = document.getElementById("userName").value;
+	document.getElementById("sam").href="forgotPass.htm?uname="+text;
+}
+</script>
+<header class="nav-down header-position">
+   <img src="img/logofirstlogo.png" align="left">
+  <div align="right">
+   <b><a href="fetchcat.htm"> Home</a>&nbsp;
+		   </b>
+   <div>
+   </header>
+</head>
+<body><main>
+<div class="container">
+<div class="row" style="margin-top:20px;">
+    
+<div class="col-xs-10 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <form role="form" action="loginhere.htm" method="post">
+      <fieldset>
+      
+  <h2 id="demo1">Login</h2>
+        <hr class="colorgraph">
+     <span>(<span style="color:red">*</span>All fields are mandatory)</span>
+   <div class="row form-group">
+        <div class="col-md-12 remove-default-padding">
+            
+             
+  <input type="text" name="userName" id="userName" class="form-control input-lg" placeholder="Username" data-validation="required" data-validation-error-msg="Please Enter Username">
+   
+     </div>
+      </div>	  
+           
+         <div class="row form-group">
+          <div class="col-md-12 remove-default-padding">
+            
+        <input type="password" name="password" id="password" data-validation="required" data-validation-error-msg="Please Enter Password" maxlength="15" class="form-control input-lg" placeholder="Password" >
+          </div>   
+        </div>
+		
+        <hr class="colorgraph">
+		
+		<div class="row form-group ">
+
+		<div class="remove-default-padding">
+			
+			
+					<a href="RegisterUser.htm" class="btn btn-link col-md-3">New User?Register Here</a>
+			
+<a href="#" class="col-md-3">
+<a href="#" class="col-md-3">
+			
+					<a href="#" id="sam" onclick="getdata()" class="btn btn-link col-md-3">Forgot Password?</a><br>
+					
+					</div>
+					</div>
+					
+				
+<div class="row form-group" align="center">
+          <div class="col-md-12 remove-default-padding">		  
+		  	
+                <input type="submit" class="btn btn-lg btn-success col-xs-4 col-md-offset-0" name="Login" value="Login">				
+					
+				<input type="reset" class="btn btn-lg btn-primary col-xs-4 col-md-offset-4" name="Cancel" value="Cancel">
+				</div>
+          
+        </div>
+		<div id="errormsg" class="row-form-group" align="center" style=""></div>
+		<div id="errormsg" class="row-form-group" align="center" style="">Username or Password is wrong here!!!</div>
+		<div id="errormsg" class="row-form-group" align="center" style=""> </div>
+		<div id="errormsg" class="row-form-group" align="center" style=""> </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.js"></script>
+<script type="text/javascript" src="scripts/jquery.form-validator.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+           
+      $.validate();
+                  
+    });
+</script></main>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<style type="text/css">
+	.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #751cc0;
+   color: #FFFFFF;
+   text-align: center;
+	}
+</style>
+</head>
+<body>
+<div class="footer">
+  	<p>&copy; Copyright 2021, Accenture LKM QE Team</p>
+	</div>
+</body>
+</html>
+</body>
+</html>
+
+

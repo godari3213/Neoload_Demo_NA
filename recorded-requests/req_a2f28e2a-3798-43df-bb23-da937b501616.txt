@@ -1,0 +1,16 @@
+GET https://lkmdemoaut.accenture.com:443/TestMeApp/js/jquery.prettyPhoto.js HTTP/1.1
+Host: lkmdemoaut.accenture.com
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://lkmdemoaut.accenture.com/TestMeApp/fetchcat.htm
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: JSESSIONID=9823EE52A9C77161E37380495F6E5734; AMCV_AAB73BC75245B44A0A490D4D%40AdobeOrg=-1124106680%7CMCIDTS%7C19369%7CvVersion%7C5.2.0
+

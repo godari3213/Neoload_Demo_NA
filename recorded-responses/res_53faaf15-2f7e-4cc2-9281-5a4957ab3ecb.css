@@ -1,0 +1,9 @@
+body{
+background-image: -webkit-gradient(linear, 80% 0%, 20% 0%, from(rgb(255, 255, 255)), to(rgb(255, 255, 180)));
+background-image: -moz-linear-gradient(center right, rgb(255, 255, 255) 25%, rgb(255, 255, 180) 80%);
+background-repeat:repeat-y;
+height:100%;
+width:100%; 
+overflow:scroll;
+}	
+footer { background: #ddd;}
